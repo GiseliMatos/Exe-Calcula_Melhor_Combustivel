@@ -44,14 +44,14 @@ class MainActivity : AppCompatActivity() {
             val resultado = calculaConsumo()
 
             if (resultado.isNotEmpty()) {
-                tv_vlrResultado.text = "Melhor combustível: $resultado"
+                tv_vlrResultado.text = getString(R.string.msg_melhor_combustivel, resultado)
             } else {
-                tv_vlrResultado.text = "Ops! Algo deu errado, verifique os campos informados."
+                tv_vlrResultado.text = getString(R.string.erro_geral)
             }
         }
 
         bt_calcular.setOnLongClickListener {
-            Toast.makeText(this, "Calcula o consumo dos combustíveis", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.hint_calculo), Toast.LENGTH_SHORT).show()
             true
         }
 
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         bt_sair.setOnLongClickListener {
-            Toast.makeText(this, "Sair do aplicativo", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.hint_sair), Toast.LENGTH_SHORT).show()
             true
         }
     }
@@ -76,22 +76,22 @@ class MainActivity : AppCompatActivity() {
         val conGasolina = et_conGasolina.text.toString().toDoubleOrNull()
 
         if(vlrEtanol==null || vlrEtanol<=0){
-            et_vlrEtanol.error = "Informe um valor válido"
+            et_vlrEtanol.error = getString(R.string.erro_validacao)
             return ""
         }
 
         if(vlrGasolina == null || vlrGasolina <= 0){
-            et_vlrGasolina.error = "Informe um valor válido"
+            et_vlrGasolina.error = getString(R.string.erro_validacao)
             return ""
         }
 
         if(conEtanol == null || conEtanol <= 0){
-            et_conEtanol.error = "Informe um valor válido"
+            et_conEtanol.error = getString(R.string.erro_validacao)
             return ""
         }
 
         if(conGasolina == null || conGasolina <= 0){
-            et_conGasolina.error = "Informe um valor válido"
+            et_conGasolina.error = getString(R.string.erro_validacao)
             return ""
         }
 
@@ -103,10 +103,10 @@ class MainActivity : AppCompatActivity() {
         custoGasolina = vlrGasolina/conGasolina
 
         if (custoEtanol < custoGasolina){
-            result = "ETANOL"
+            result = getString(R.string.etanol)
         }
         else{
-            result = "GASOLINA"
+            result = getString(R.string.gasolina)
         }
         return result
     }

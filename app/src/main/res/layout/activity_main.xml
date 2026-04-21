@@ -1,64 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@android:drawable/edit_text"
+    android:background="#F5F4F0"
     >
 
     <TextView
         android:id="@+id/tv_vlrEtanol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor Etanol: " />
+        android:text="@string/valor_etanol" />
 
     <EditText
         android:id="@+id/et_vlrEtanol"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="Ex: 4.50"/>
+        android:hint="@string/ex_4_50"/>
 
     <TextView
         android:id="@+id/tv_vlrGasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor Gasolina: " />
+        android:text="@string/valor_gasolina" />
 
     <EditText
         android:id="@+id/et_vlrGasolina"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="Ex: 5.10"/>
+        android:hint="@string/ex_5_10"/>
 
     <TextView
         android:id="@+id/tv_conEtanol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consumo Etanol: " />
+        android:text="@string/consumo_etanol" />
 
     <EditText
         android:id="@+id/et_conEtanol"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="Ex: 9.00"/>
+        android:hint="@string/ex_9_00"/>
 
     <TextView
         android:id="@+id/tv_conGasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consumo Gasolina: " />
+        android:text="@string/consumo_gasolina" />
 
     <EditText
         android:id="@+id/et_conGasolina"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="Ex: 11.00"/>
+        android:hint="@string/ex_11_00"/>
 
     <LinearLayout
         android:id="@+id/ll_agrupResultado"
@@ -70,7 +71,7 @@
             android:id="@+id/tv_resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resultado: " />
+            android:text="@string/resultado" />
 
         <TextView
             android:id="@+id/tv_vlrResultado"
@@ -93,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="CALCULAR"/>
+            android:text="@string/calcular"/>
 
         <Button
             android:id="@+id/bt_sair"
@@ -101,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="SAIR"/>
+            android:text="@string/sair"/>
 
     </LinearLayout>
 

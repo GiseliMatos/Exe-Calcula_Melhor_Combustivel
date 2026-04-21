@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Exe02-ComparaPrecoCombustiveis-TratamentoEventos</string>
+    <string name="valor_etanol">Valor Etanol:</string>
+    <string name="ex_4_50">Ex: 4.50</string>
+    <string name="valor_gasolina">Valor Gasolina:</string>
+    <string name="ex_5_10">Ex: 5.10</string>
+    <string name="consumo_etanol">Consumo Etanol:</string>
+    <string name="ex_9_00">Ex: 9.00</string>
+    <string name="consumo_gasolina">Consumo Gasolina:</string>
+    <string name="ex_11_00">Ex: 11.00</string>
+    <string name="resultado">Resultado:</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="sair">SAIR</string>
+
+    <string name="msg_melhor_combustivel">Melhor combustível: %1$s</string>
+    <string name="erro_validacao">Informe um valor válido</string>
+    <string name="erro_geral">Ops! Algo deu errado, verifique os campos informados.</string>
+    <string name="hint_calculo">Calcula o consumo dos combustíveis</string>
+    <string name="hint_sair">Sair do aplicativo</string>
+    <string name="etanol">ETANOL</string>
+    <string name="gasolina">GASOLINA</string>
 </resources>
